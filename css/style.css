@@ -4,21 +4,23 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 #wrapper {
 	width:800px;
-	background-color: blue;
 	margin:auto;
 }
 
 #header {
-	background-color: #27ae60;
+	/*background-color: #27ae60;*/
+	background-color: #9b59b6;
 	height: 50px;
 	text-align: center;
   font-family: 'Grand Hotel', cursive;
 	font-size:50px;
 	font-weight: bold;
+	border:none;
+  border-radius:10px;
 }
 
 #browse {
-	background-color: #bdc3c7;
+	background-color: #fff;
 	height: 20px;
 	padding:10px;
 	text-align: center;
@@ -27,7 +29,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 #trail {
 	height:10px;
-	background-color: #27ae60;
+	background-color: #7f8c8d;
 	padding: 10px;
 }
 
