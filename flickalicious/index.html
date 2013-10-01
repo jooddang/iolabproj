@@ -17,14 +17,14 @@
     </head>
     <body>
         <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+            <p>Sorry, this site will not work on your browser</p>
         <![endif]-->
 
         <div id="wrapper">
             <div id="header-container">
-                <!--<header>-->
+                <header>
                     <h1>flickalicious</h1>    
-                <!--</header>-->
+                </header>
             </div>
             <div id="main-container">
                 <div id="browse">
@@ -32,24 +32,29 @@
                         <fieldset>
                             <div id="query-text">
                                 <label>Type in a username or tag
-                                    <input id="query" type="text">
+                                    <input id="query" type="text" placeholder="Enter tag or leave blank">
                                 </label>
                             </div>
                         </fieldset>
                         <fieldset>
                             <div id="query-type">
-                                <input id="username-btn" value="Username" type="button" onclick="searchBy(event, 'username');">
-                                <input id="tag-btn" value="Tag" type="button">
+                                <input id="tag-btn" value="Search" type="button">
                             </div>
                         </fieldset>
                     </form>
                 </div>
-                <div id="trail"></div>
-                <div id="grid"></div>
+                <div id="trail">
+                    <ul id="tlist">
+                    <li>Sorry, your trail is currently empty.</li>
+                    </ul>
+                </div>
+                <div id="grid">
+                    <p>Currently no images in your grid</p>
+                </div>
             </div>
         </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>');</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
     </body>
