@@ -14,5 +14,10 @@ flickalicious allows a user to view his flickr photo stream and begin exploring 
 Flickr API<br>
 
 **Demo**<br>
+http://people.ischool.berkeley.edu/~vanessa/flickalicious/
 
-**Known Bugs**
+**Known Bugs**<br>
+* Foreign language tags can appear -- could filter these
+* Some tags contain meta data and are meaningless (example: uploaded:by=flickrmobile) -- could filter these
+* Multiple word queries will not be processed -- could remove query spaces and concatenate into a tag
+* Issue with row div, the height doesn't resize
