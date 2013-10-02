@@ -135,7 +135,7 @@ function tagsToHTML(s) {
 }
 
 TLNode.prototype.toHTML = function() {
-    return '<li class="node">' + this.val + "</li>";
+    return '<li class="node">' + this.val + "</li>&#8250;";
 };
 
 function addListToTrail(s) {
@@ -181,7 +181,7 @@ $(function() {
         if (qtype) {
             obj.tags = query;
             console.log("y" + obj);
-        }
+       /* }*/
         $.getJSON(FLICK.api, obj).done(function(data) {
             if (qtype) {
                 console.log("yes " + query);
@@ -207,6 +207,7 @@ $(function() {
             $("img").on('hover', imgOnClick);
             $("button.tag").on('click', buttonOnClick);
         });
+    }
     });
 
     function flickrIter(data, arr) {
@@ -242,11 +243,11 @@ $(function() {
 
     //////////////
     function makeGrid(arr) {
-        var $grid = $("#grid");
+        var grid = $("#grid");
         for (var i = 0; i < arr.length; i++) {
-            var $r = $("<div>").attr({"class": "row", "id": "r" + i});
+            var r = $("<div>").attr({"class": "row", "id": "r" + i});
             for (var j = 0; j < arr[i].length; j++) {
-                $r.append(
+                r.append(
                         $("<div>").attr({"class": "swap", "id": "s" + "" + i + "" + j})
                         .append(
                         ($("<div>").attr({"class": "cell", "id": "c" + "" + i + "" + j})
@@ -266,7 +267,7 @@ $(function() {
 
                         );
             }
-            $grid.append($r);
+            grid.append(r);
         }
     }
 
